@@ -1,0 +1,1344 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Web Kasir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+      <div class="flex flex-col md:flex-row">
+        <!-- Menu Section -->
+        <div class="w-full md:w-2/3 p-4">
+          <h2 class="text-2xl font-bold mb-4">Menu</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Coffee Menu -->
+            <div class="col-span-full">
+              <h3 class="text-xl font-semibold mb-2">Menu Coffee</h3>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                alt="Image of Caffe Latte hot"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/hFjbphlViFq5MtjOVCvCMPmMZBY5fbHzo6BxO3CGN4Zrdl7JA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Caffe Latte Hot </span>
+                <span> 20.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Caffe Latte Hot', 20000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                alt="Image of Caffe Latte Ice"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Caffe Latte Ice </span>
+                <span> 22.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Caffe Latte Ice', 22000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/Capucino-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Cappucino Hot </span>
+                <span> 20.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Cappucino Hot', 20000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/Capucino-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Cappucino Ice </span>
+                <span> 22.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Cappucino Ice', 22000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/americano-removebg-preview.png"
+                class="w-60 h-35 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Americano Hot </span>
+                <span> 18.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Americano Hot', 18000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/americano-removebg-preview.png"
+                class="w-60 h-35 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Americano Ice </span>
+                <span> 18.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Americano Ice', 18000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src=""
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Ambon Hot </span>
+                <span> 20.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Ambon Hot', 20000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src=""
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Ambon Ice </span>
+                <span> 20.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Ambon Ice', 20000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/mocca-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Mocca Hot </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Mocca Hot', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/mocca-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Mocca Ice </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Mocca Ice', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/vanilla hot-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Vanilla Coffee Hot </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Vanilla Coffee Hot', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/vanilla_ice-removebg-preview.png"
+                class="w-55 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Vanilla Coffee Ice </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Vanilla Coffee Ice', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/caramel-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Caramel Coffee Hot </span>
+                <span> 23.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Caramel Coffee Hot', 23000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/caramel-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Caramel Coffee Ice </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Caramel Coffee Ice', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/Almond-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Almond Coffee Hot </span>
+                <span> 23.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Almond Coffee Hot', 23000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/Almond-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Almond Coffee Ice </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Almond Coffee Ice', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/hazelnut-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Hazelnut Coffee Hot </span>
+                <span> 23.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Hazelnut Coffee Hot', 23000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/hazelnut-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Hazelnut Coffee Ice </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Hazelnut Coffee Ice', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/avocado-coffee-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Avocado Coffee Hot </span>
+                <span> 23.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Avocado Coffee Hot', 23000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/avocado-coffee-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Avocado Coffee Ice </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Avocado Coffee Ice', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/coconut-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Coconut Coffee Hot </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Coconut Coffee Hot', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/coconut-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Coconut Coffee Ice </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Coconut Coffee Ice', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/kopi_pandan_susu-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Kopasus Hot </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Kopasus Hot', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/kopi_pandan_susu-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Kopasus Ice </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Kopasus Ice', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/Kopi_susu-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Kopi Susu Hot </span>
+                <span> 20.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Kopi Susu Hot', 20000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/Kopi_susu-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Kopi Susu Ice </span>
+                <span> 22.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Kopi Susu Ice', 22000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/kopi_gula_aren-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Eskobar Hot </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Eskobar Hot', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/kopi_gula_aren-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Eskobar Ice </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Eskobar Ice', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/biscoff-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Biscoff Coffee Hot </span>
+                <span> 27.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Biscoff Coffee Hot', 27000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/biscoff-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/cNpAoejGK115CijqfUykCVKAI6Xiejl92sf21h8KfXpfzuy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Biscoff Coffee Ice </span>
+                <span> 27.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Biscoff Coffee Ice', 27000)"
+              >
+                +
+              </button>
+            </div>
+            <!-- Repeat for each coffee menu item -->
+            <!-- Non-Coffee Menu -->
+            <div class="col-span-full">
+              <h3 class="text-xl font-semibold mb-2">Menu Non-Coffee</h3>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/biscoff-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/MqJx9qAmdBZVOhflgrYohTesXS6e0yqTwrExJKH3fWtwtrcPB.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Biscoff Hot </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Biscoff Hot', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="kopi/biscoff-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Biscoff Ice </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Biscoff Ice', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/taro-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Taro Hot </span>
+                <span> 20.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Taro Hot', 20000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/taro-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Taro Ice </span>
+                <span> 22.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Taro Ice', 22000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/cookies-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Cookies & Cream Hot </span>
+                <span> 22.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Cookies & Cream Hot', 22000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/cookies-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Cookies & Cream Ice </span>
+                <span> 22.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Cookies & Cream Ice', 22000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/banana-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Banana Hot </span>
+                <span> 20.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Banana Hot', 20000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/banana-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Banana Ice </span>
+                <span> 20.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Banana Ice', 20000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/red-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Red Velvet Hot </span>
+                <span> 20.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Red Velvet Hot', 20000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/red-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Red Velvet Ice </span>
+                <span> 22.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Red Velvet Ice', 22000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/avocado-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Avocado Hot </span>
+                <span> 20.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Avocado Hot', 20000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/avocado-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Avocado Ice </span>
+                <span> 22.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Avocado Ice', 22000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/lemon-tea-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Lemon Tea Hot </span>
+                <span> 16.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Lemon Tea Hot', 16000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/lemon-tea-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Lemon Tea Ice </span>
+                <span> 18.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Lemon Tea Ice', 18000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/lemint-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Lemint Hot </span>
+                <span> 16.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Lemint Hot', 16000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/lemint-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Lemint Ice </span>
+                <span> 18.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Lemint Ice', 18000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/milk-tea-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Milk Tea Hot </span>
+                <span> 16.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Milk Tea Hot', 16000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/milk-tea-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Milk Tea Ice </span>
+                <span> 18.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Milk Tea Ice', 18000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/chocolate-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Chocolate Hot </span>
+                <span> 23.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Chocolate Hot', 23000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="non-kopi/chocolate-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/6BYMdQ6iUR68ANwFJA7PDjDiW4Aai5RlIU1ci8A8SgB1uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Chocolate Ice </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Chocolate Ice', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <!-- Repeat for each non-coffee menu item -->
+            <!-- Snack & Dessert Menu -->
+            <div class="col-span-full">
+              <h3 class="text-xl font-semibold mb-2">
+                Menu Snack &amp; Dessert
+              </h3>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Snack & Desert/puding-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/0K0xYunCzWJTD5f288Lihqsyvpaeg7XSWBkHGwSefc41trcPB.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Puding Fla </span>
+                <span> 15.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Puding Fla', 15000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                alt="Image of French Fries"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/4HapemXk7ZWzDqiHwr8MP4uQ75eLAHUUJrkmWTJlmhYZ7K3TA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> French Fries </span>
+                <span> 15.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('French Fries', 15000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Snack & Desert/mix-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/4HapemXk7ZWzDqiHwr8MP4uQ75eLAHUUJrkmWTJlmhYZ7K3TA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Mix Snack </span>
+                <span> 30.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Mix Snack', 30000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Snack & Desert/roti coklat.jpg"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/4HapemXk7ZWzDqiHwr8MP4uQ75eLAHUUJrkmWTJlmhYZ7K3TA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Roti Bakar Coklat </span>
+                <span> 15.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Roti Bakar Coklat', 15000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Snack & Desert/roti_coklat_keju-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/4HapemXk7ZWzDqiHwr8MP4uQ75eLAHUUJrkmWTJlmhYZ7K3TA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Roti Bakar Coklat Keju </span>
+                <span> 15.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Roti Bakar Coklat Keju', 15000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Snack & Desert/pisang_coklat-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/4HapemXk7ZWzDqiHwr8MP4uQ75eLAHUUJrkmWTJlmhYZ7K3TA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Pisang Goreng Coklat </span>
+                <span> 15.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Pisang Goreng Coklat', 15000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Snack & Desert/pisang_coklat_keju-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/4HapemXk7ZWzDqiHwr8MP4uQ75eLAHUUJrkmWTJlmhYZ7K3TA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Pisang Goreng Coklat Keju </span>
+                <span> 15.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Pisang Goreng Coklat Keju', 15000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Snack & Desert/kasbi_goreng-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/4HapemXk7ZWzDqiHwr8MP4uQ75eLAHUUJrkmWTJlmhYZ7K3TA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Kasbi Goreng </span>
+                <span> 15.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Kasbi Goreng', 15000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Snack & Desert/lumpia-removebg-preview.png"
+                class="w-60 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/4HapemXk7ZWzDqiHwr8MP4uQ75eLAHUUJrkmWTJlmhYZ7K3TA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Lumpia Goreng </span>
+                <span> 20.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Lumpia Goreng', 20000)"
+              >
+                +
+              </button>
+            </div>
+            <!-- Repeat for each snack & dessert menu item -->
+            <!-- Makanan Menu -->
+            <div class="col-span-full">
+              <h3 class="text-xl font-semibold mb-2">Menu Makanan</h3>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Makanan/taichan.jpg"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/obLnDTRqmo5UBtjKvFbB7W0aT4A8PPNLglMgi20X5jk0uy9E.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Sate Taichan + Lontong </span>
+                <span> 35.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Sate Taichan + Lontong', 35000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Makanan/lalapan-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/3MMwXpwURp5EEZigt84elLy02Co6rwMqfjYpqlJugFyQ7K3TA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Ayam Lalapan </span>
+                <span> 25.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Ayam Lalapan', 25000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Makanan/mi_goreng-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/3MMwXpwURp5EEZigt84elLy02Co6rwMqfjYpqlJugFyQ7K3TA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Indomie Goreng + Telur </span>
+                <span> 15.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Indomie Goreng + Telur', 15000)"
+              >
+                +
+              </button>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+              <img
+                src="Makanan/mi_kuah-removebg-preview.png"
+                class="w-50 h-32 object-cover mb-2"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/3MMwXpwURp5EEZigt84elLy02Co6rwMqfjYpqlJugFyQ7K3TA.jpg"
+                width="100"
+              />
+              <div class="flex justify-between items-center">
+                <span> Indomie Kuah + Telur </span>
+                <span> 15.000 </span>
+              </div>
+              <button
+                class="mt-2 bg-blue-500 text-white px-2 py-1 rounded"
+                onclick="addToReceipt('Indomie Kuah + Telur', 15000)"
+              >
+                +
+              </button>
+            </div>
+            <!-- Repeat for each makanan menu item -->
+          </div>
+        </div>
+        <!-- Receipt Section -->
+        <div class="w-full md:w-1/3 p-4">
+          <h2 class="text-2xl font-bold mb-4">Struk</h2>
+          <div class="bg-white p-4 rounded shadow">
+            <div class="mb-4">
+              <label
+                class="block text-sm font-medium text-gray-700"
+                for="customerName"
+              >
+                Nama Pemesan
+              </label>
+              <input
+                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                id="customerName"
+                type="text"
+              />
+            </div>
+            <div class="mb-4" id="receiptItems">
+              <!-- Receipt items will be added here -->
+            </div>
+            <div class="flex justify-between items-center font-bold">
+              <span> Total </span>
+              <span id="totalPrice"> 0 </span>
+            </div>
+            <button
+              class="mt-4 bg-green-500 text-white px-4 py-2 rounded"
+              onclick="printReceipt()"
+            >
+              Cetak Struk
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let receipt = [];
+      let total = 0;
+
+      function addToReceipt(item, price) {
+        const existingItem = receipt.find((i) => i.name === item);
+        if (existingItem) {
+          existingItem.quantity += 1;
+        } else {
+          receipt.push({ name: item, price: price, quantity: 1 });
+        }
+        total += price;
+        updateReceipt();
+      }
+
+      function removeFromReceipt(item) {
+        const itemIndex = receipt.findIndex((i) => i.name === item);
+        if (itemIndex > -1) {
+          total -= receipt[itemIndex].price;
+          if (receipt[itemIndex].quantity > 1) {
+            receipt[itemIndex].quantity -= 1;
+          } else {
+            receipt.splice(itemIndex, 1);
+          }
+        }
+        updateReceipt();
+      }
+
+      function updateReceipt() {
+        const receiptItems = document.getElementById("receiptItems");
+        receiptItems.innerHTML = "";
+        receipt.forEach((item) => {
+          const itemElement = document.createElement("div");
+          itemElement.className = "flex justify-between items-center mb-2";
+          itemElement.innerHTML = `
+                    <span>${item.name} (${item.quantity})</span>
+                    <span>${formatCurrency(item.price * item.quantity)}</span>
+                    <button class="ml-2 bg-red-500 text-white px-2 py-1 rounded" onclick="removeFromReceipt('${
+                      item.name
+                    }')">-</button>
+                `;
+          receiptItems.appendChild(itemElement);
+        });
+        document.getElementById("totalPrice").innerText = formatCurrency(total);
+      }
+
+      function formatCurrency(amount) {
+        return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+      }
+
+      function printReceipt() {
+        const customerName = document.getElementById("customerName").value;
+        const receiptContent = receipt
+          .map(
+            (item) =>
+              `${item.name} (${item.quantity}) - ${formatCurrency(
+                item.price * item.quantity
+              )}`
+          )
+          .join("\n");
+        const printContent = `Nama Pemesan: ${customerName}\n\n${receiptContent}\n\nTotal: ${formatCurrency(
+          total
+        )}`;
+        const printWindow = window.open("", "", "height=400,width=600");
+        printWindow.document.write("<pre>" + printContent + "</pre>");
+        printWindow.document.close();
+        printWindow.print();
+      }
+    </script>
+  </body>
+</html>
